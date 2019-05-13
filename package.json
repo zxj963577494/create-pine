@@ -1,6 +1,6 @@
 {
   "name": "create-pine",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "Creates a react application using the command line.",
   "bin": {
     "create-pine": "cli.js"
@@ -39,6 +39,7 @@
   "files": [
     "cli.js",
     "index.js",
-    "lib"
+    "lib",
+    "utils"
   ]
 }
