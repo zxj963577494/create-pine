@@ -1,0 +1,44 @@
+{
+  "name": "create-pine",
+  "version": "1.0.0",
+  "description": "Creates a react application using the command line.",
+  "bin": {
+    "create-pine": "cli.js"
+  },
+  "scripts": {
+    "prepublishOnly": "np --no-cleanup --yolo --no-publish",
+    "prettier": "prettier -c --write '**/*'"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "clipboardy": "^2.0.0",
+    "debug": "^4.1.1",
+    "execa": "^1.0.0",
+    "inquirer": "^6.3.1",
+    "mkdirp": "^0.5.1",
+    "semver": "^6.0.0",
+    "yargs-parser": "^13.1.0",
+    "yeoman-generator": "^4.0.0"
+  },
+  "devDependencies": {
+    "np": "^5.0.1",
+    "prettier": "^1.17.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zxj963577494/create-pine"
+  },
+  "homepage": "https://github.com/zxj963577494/create-pine",
+  "authors": [
+    "zhengxujiang <963577494@qq.com> (https://github.com/zxj963577494)"
+  ],
+  "bugs": {
+    "url": "https://github.com/zxj963577494/create-pine/issues"
+  },
+  "files": [
+    "cli.js",
+    "index.js",
+    "lib"
+  ]
+}
