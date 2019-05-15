@@ -38,8 +38,6 @@
 
 - [Git Commit 规范](./docs/Git%20Commit规范.md)
 
-- [Git 工作流和发布流程.md](./docs/Git%20工作流和发布流程.md)
-
 - [版本规范.md](./版本规范.md)
 
 ## :paperclip: 更新日志
