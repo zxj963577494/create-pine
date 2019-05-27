@@ -28,7 +28,7 @@
     "lint:ts": "eslint --fix --ext '.js,.jsx,.ts,.tsx' src",
     <% } %>
     "lint:prettier": "prettier --config ./.prettierrc.js --write 'src/**/*.*(js|ts|jsx|tsx|json|less)'",
-    "lint:style": "stylelint --fix 'src/**/*.less' --syntax less",
+    "lint:style": "stylelint --fix 'src/**/*.*(less|scss|css)'",
     "release": "standard-version",
     "test": "jest --color",
     "test:watch": "jest  --color --watchAll"
@@ -42,7 +42,10 @@
     }
   },
   "lint-staged": {
-    "**/*.less": "stylelint --syntax less",
+    "**/*.{css,less,scss}": [
+      "stylelint --fix 'src/**/*.*(less|scss|css)'",
+      "git add"
+    ],
     "**/*.{json,html,css,less,scss,md,yaml,yml}": [
       "prettier --config ./.prettierrc.js --write",
       "git add"
