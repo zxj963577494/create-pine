@@ -21,6 +21,7 @@
     "yeoman-generator": "^4.0.0"
   },
   "devDependencies": {
+    "cross-spawn": "^6.0.5",
     "np": "^5.0.1",
     "prettier": "^1.17.0"
   },
